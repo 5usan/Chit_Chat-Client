@@ -1,9 +1,10 @@
+import { useState } from "react";
+import Login from "./components/Login/Login";
+
 function App() {
-  return (
-    <div>
-      Hello, lets Chit-Chat
-    </div>
-  );
+  const [id, setId] = useState();
+  console.log(id);
+  return <Login onIdSubmit={setId} />;
 }
 
 export default App;
